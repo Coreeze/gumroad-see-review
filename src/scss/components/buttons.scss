@@ -1,0 +1,35 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0.75rem 1rem;
+  border: solid 0.0625rem $color-light-grey;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  transition-timing-function: ease-out;
+  transition-duration: 0.14s;
+  transition-property: all;
+
+  &:hover {
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.25rem 0.25rem 0rem;
+  }
+}
+
+#buy {
+  background-color: $color-black;
+  color: $color-white;
+
+  &:hover {
+    color: $color-black;
+    background-color: $color-pink;
+    transform: translate(-0.25rem, -0.25rem);
+    box-shadow: 0.25rem 0.25rem 0rem $color-black;
+  }
+}
