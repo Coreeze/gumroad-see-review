@@ -239,7 +239,7 @@ function Product() {
                 >
                   <IoMdStar size={20} />
                   {Math.round((reviews.totalStars / reviews.countStars) * 100) /
-                    100}
+                    100 || 0}
                   (
                   {reviews.countStars > 1 || reviews.countStars === 0
                     ? reviews.countStars + " ratings"
